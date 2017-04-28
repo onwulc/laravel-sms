@@ -308,7 +308,7 @@ class SmsManager
 
     /**
      * 获取客户端数据
-     *
+     * 增加对input的赋值，方便业务层面定制数据
      * @param string|int|null $key
      * @param mixed           $default
      *
@@ -316,6 +316,10 @@ class SmsManager
      */
     public function input($key = null, $default = null)
     {
+        if (is_array($key)){
+            return $this->input = array_merge($this->input,$key);
+        }
+        
         if ($key !== null) {
             return isset($this->input[$key]) ? $this->input[$key] : $default;
         }
