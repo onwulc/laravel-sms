@@ -1,6 +1,7 @@
 # Laravel Sms
 
 一个基于`Laravel`框架的功能强大的手机号合法性验证解决方案。
+增加了SmsManager::input方法，方便业务层面定制数据
 
 ### 1. 关于2.0
 `laravel-sms` 2.0是基于[toplan/phpsms](https://github.com/toplan/phpsms)开发的适用于`Laravel`框架的手机号验证解决方案。
