@@ -43,7 +43,7 @@ class SmsController extends Controller
 
     public function getInfo()
     {
-        $html = '<meta charset="UTF-8"/><h2 align="center" style="margin-top: 30px;margin-bottom: 0;">Laravel Sms</h2>';
+        $html = '<meta charset="UTF-8"/><h2 align="center" style="margin-top: 30px;margin-bottom: 0;">发送信息</h2>';
         $html .= '<p>你可以在调试模式(设置config/app.php中的debug为true)下查看到存储在存储器中的验证码短信/语音相关数据:</p>';
         echo $html;
         if (config('app.debug')) {
